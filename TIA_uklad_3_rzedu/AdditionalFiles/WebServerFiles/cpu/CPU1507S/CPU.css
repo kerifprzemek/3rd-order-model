@@ -1,0 +1,155 @@
+#CPU
+{
+position: relative;
+float: left;
+width: 382px;
+height: 394px;
+background-color: #536270;
+background-image: url('CPU_BK.png');
+}
+#CPU_INFO
+{
+position: relative;
+float: left;
+}
+#CPU_NAME
+{
+display: none;
+}
+#CPU_MLFB
+{
+display: none;
+}
+#LED_POWER
+{
+display: none;
+}
+#LED_RUNSTOP
+{
+position: absolute;
+height: 16px;
+width: 16px;
+top: 16px;
+left: 279px;
+overflow: hidden;
+}
+#LED_ERROR
+{
+position: absolute;
+height: 16px;
+width: 16px;
+top: 41px;
+left: 279px;
+overflow: hidden;
+}
+#LED_MAINTENANCE
+{
+position: absolute;
+height: 16px;
+width: 16px;
+top: 65px;
+left: 279px;
+overflow: hidden;
+}
+#DISPLAY
+{
+position: absolute;
+height: 333px;
+width: 250px;
+top: 46px;
+left: 15px;
+overflow: hidden;
+background-color: #c3c7fe;
+}
+#DISPLAY_CONTENT
+{
+position: absolute;
+height: 299px;
+width: 250px;
+top: 34px;
+left: 0px;
+overflow: hidden;
+background-color: #c5c0fa;
+background-image: url('display_bottom.png');
+}
+#DISPLAY_STATUS
+{
+position: absolute;
+height: 34px;
+width: 250px;
+top: 0px;
+left: 0px;
+overflow: hidden;
+font-family: "Arial";
+font-weight: bold;
+font-size: 24px;
+color: #000000;
+padding-top: 2px;
+padding-left: 4px;
+/* Only for F-CPU!
+background-image: url('f_bar.png');
+background-position: bottom;
+background-repeat: repeat-x;
+*/
+}
+#DISPLAY_STATUS.CPUInSTARTUP
+{
+background-color: #ff9200;
+}
+#DISPLAY_STATUS.CPUInRUN
+{
+background-color: #00b600;
+}
+#DISPLAY_STATUS.CPUInSTOP
+{
+background-color: #ff9200;
+}
+#DISPLAY_STATUS.CPUInOTHERSTATE
+{
+background-color: #ffffff;
+}
+#DISPLAY_CPU_NAME
+{
+position: absolute;
+left: 6px;
+top: 87px;
+font-family: "Arial";
+font-weight: bold;
+font-size: 13px;
+color: #000000;
+}
+#DISPLAY_CPU_MLFB
+{
+position: absolute;
+right: 6px;
+bottom: 59px;
+font-family: "Arial";
+font-size: 12px;
+color: #000000;
+}
+#SWITCH
+{
+display: none;
+}
+#SWITCH.CPUInRUN
+{
+}
+#SWITCH.CPUInSTOP
+{
+}
+.disabled
+{
+background-image: url('led_disabled.png');
+}
+.green
+{
+background-image: url('led_green.png');
+}
+.red
+{
+background-image: url('led_red.png');
+}
+.yellow
+{
+background-image: url('led_yellow.png');
+}

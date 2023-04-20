@@ -1,0 +1,183 @@
+<!-- AWP_In_Variable Name='"Data".Setpoint'-->
+<!-- AWP_In_Variable Name='"Data".Parameter.PIDController_D'-->
+<!-- AWP_In_Variable Name='"Data".Parameter.PIDController_I'-->
+<!-- AWP_In_Variable Name='"Data".Parameter.PIDController_LowerSaturationLi'-->
+<!-- AWP_In_Variable Name='"Data".Parameter.PIDController_N'-->
+<!-- AWP_In_Variable Name='"Data".Parameter.PIDController_P'-->
+<!-- AWP_In_Variable Name='"Data".Parameter.PIDController_UpperSaturationLi'-->
+
+<!--
+    Project:        Simulink Web Visualization
+    Name:           index.html
+    Author:         Dominic.Juland@siemens.com
+    Description:    Template for the Simulink WebVisu Webpage.
+    History:        28.06.2016 - DJ - refactoring
+
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SIEMENS S7 Simulink Visualization - Prototype</title>
+
+    <link rel="stylesheet" href="./CSS/S7Web.css">
+    <link rel="stylesheet" href="./CSS/S7MemoryApp.css">
+    <link rel="stylesheet" href="./cpu/CPU1507S/CPU.css">
+
+    <script src="./js/encoder.js"></script>
+	<script src="./js/ajaxbase.js"></script>
+    <script src="./js/svg_call.js"></script>
+    <script src="./js/svg_manipulate.js"></script>
+    <script src="./js/main.js"></script>
+	
+
+</head>
+
+<body onload="startWebVisu()">
+
+    <!--unvisible Login iFrame-->
+    <iframe id="WebserverIFrame" name="WebserverIFrameName" src="../Portal/Portal.mwsl" style="display:none"></iframe>
+
+
+    <table class="main_table  " cellspacing="0" cellpadding="0">
+        <!-- Header Line -->
+        <tr id="Header_Logo_and_Title" class="Header_Area">
+
+            <!-- Siemens Logo -->
+            <td><img src="./Images/Siemens_Firmenmarke_Header.gif" alt="Siemens" border="0"></td>
+
+            <!-- Object description (Headline) -->
+            <td valign="top">
+                <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                        <td height="18"></td>
+                    </tr>
+                    <tr>
+                        <td valign="top" id="Header_Title_Description">SIEMENS S7 Simulink Visualization - Prototype</td>
+                    </tr>
+                </table>
+            </td>
+            <!-- Object description (Headline) End -->
+
+        </tr>
+
+        <tr id="Header_Language_Time_Date">
+            <!--NotImplement-->
+        </tr>
+
+        <tr class="Separation_Line">
+            <td colspan="2"> </td>
+        </tr>
+        <!-- Header Line End-->
+
+        <!-- Generated Line (includes MainNavigation) and ClientArea(includes Title Area) -->
+        <tr id="Generated_Line">
+
+            <!-- Main Menu -->
+            <td id="Generated_Line_MainMenu" valign="top" bgcolor="#d0d3da">
+                <!-- valign, bgcolor: Need for IE8..IE10 -->
+                <!-- Menu Generation -->
+
+                <table id="MainMenu_Area" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <!-- Login Area -->
+                        <!--<td class="Login_Area" colspan="2"><img src="/Images/SIMATIC_CONTROLLER.png" alt="Simatic Controller"></td>-->
+                        <div id="logForm" class="Login_Area" colspan="2"></div>
+                        <!--Login Area End -->
+                    </tr>
+
+
+                    <tr>
+                        <td height="24" colspan="2"></td>
+                    </tr>
+                    <tr class="MainMenu_Navigation_Level1">
+                        <td class="MainMenu_Navigation_arrow_Level1">
+                            <img src="../Images/NaviPfeilblau.gif" alt="" border="0">
+                        </td>
+                        <td class="MainMenu_Navigation_Level1">
+                            <a class="MainMenu_Navigation_Text_Level1_Selected" href='index.html'>PID_Model</a>
+                        </td>
+                    </tr>
+
+                    <!--Insert Submodellinks here-->
+                    
+
+                    <tr>
+                        <td height="56" colspan="2"></td>
+                    </tr>
+                    <tr class="MainMenu_Navigation_Level1">
+                        <td class="MainMenu_Navigation_arrow_Level1">
+                            <img src="../Images/NaviPfeilgrau.gif" alt="" border="0">
+                        </td>
+                        <td class="MainMenu_Navigation_Level1">
+                            <a class="MainMenu_Navigation_Text_Level1" href='..'>Intro</a>
+                        </td>
+                    </tr>
+
+                    <!-- the following line is necessary for styling reasons -->
+                    <tr>
+                        <td height="100%" colspan="2"></td>
+                    </tr>
+                </table>
+
+            </td>
+            <!-- Main Menu End-->
+
+            <!-- Client Area -->
+            <td id="Generated_Line_ClientArea" class="Client_Area">
+                <table id="ClientArea_DataArea" class="Data_Area" cellspacing="0" cellpadding="0" border="0">
+
+                    <!-- Title Area -->
+                    <tr id="Title_Area">
+                        <td class="Title_Area">
+                            <table class="Title_Area_Table">
+                                <tr id="Title_Area_Table">
+                                    <td class="Title_Area_Name" id="Title_Area_Name">
+                                        Simulink Prototype
+                                    </td>
+                                    <!-- ToDo: Reload und Printer müssen noch implementiert werden, falls benötigt. -->
+                                    <!-- <td class="Title_Area_ReloadIcon" id="TD_254">&nbsp;<span id="dynamic_link"><a class="Link_ReloadIcon" href="../ReloadSite.mwsl" id="A_322"><img height="13" title="Aktualisieren" alt="Refresh" border="0" src="../Images/update_active.gif" id="IMG_375"></a></span></td>
+                                    <td class="Title_Area_PrinterIcon" id="TD_485">
+                                        <a class="PrinterIcon_Active" href="../Portal/Print.mwsl?PriNav=Start" target="_blank">
+                                                    &nbsp;
+                                                    <img title="Drucken" style="padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px; height: 13px;" alt="Print" src="./Images/Drucken.gif" border="0" id="IMG_794">
+                                                </a>
+                                    </td> -->
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Title Area End -->
+
+                    <!-- View Area -->
+                    <tr id="View_Area" style="background:white">
+                        <td align="left" valign="top" class="table_position" height="100%">
+                            <h2 id="BlockTitle">PID_Model</h2>
+                            <div id="page-content">
+                                <div>
+                                    <object id="model-svg" width="800" height="600" type="image/svg+xml" data="./PID_Model_new.svg"></object>
+                                    <!--<iframe id="SVG_model" width="800" height="600" type="image/svg+xml" src="./src/model.svg"></iframe>-->
+																		<iframe id="ParameterSettings" src=""
+																						width="300" 
+																						height="500">
+																		Error: Your Browser can`t call die parametersettingsframe!				
+																		</iframe>		
+																</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- View Area End-->
+
+                </table>
+            </td>
+            <!-- Client Area End -->
+
+        </tr>
+        <!-- END Generated Line (includes MainNavigation) and ClientArea(includes Title Area) -->
+    </table>
+
+</body>
+
+</html>

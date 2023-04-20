@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Set Parameter of PIDController</h3>
+
+	PIDController_D: <input type="number" id="PIDController_D" value=':="Data".Parameter.PIDController_D:'><br>
+	PIDController_I: <input type="number" id="PIDController_I" value=':="Data".Parameter.PIDController_I:'><br>
+	PIDController_LowerSaturationLi: <input type="number" id="PIDController_LowerSaturationLi" value=':="Data".Parameter.PIDController_LowerSaturationLi:'><br>
+	PIDController_N: <input type="number" id="PIDController_N" value=':="Data".Parameter.PIDController_N:'><br>
+	PIDController_P: <input type="number" id="PIDController_P" value=':="Data".Parameter.PIDController_P:'><br>
+	PIDController_UpperSaturationLi: <input type="number" id="PIDController_UpperSaturationLi" value=':="Data".Parameter.PIDController_UpperSaturationLi:'><br>
+	
+	<button onclick="writeParameter()">Write</button>
+	
+	<script>
+		function writeParameter() {
+			var PIDController_D = document.getElementById("PIDController_D").value;
+			var PIDController_I = document.getElementById("PIDController_I").value;
+			var PIDController_LowerSaturationLi = document.getElementById("PIDController_LowerSaturationLi").value;
+			var PIDController_N = document.getElementById("PIDController_N").value;
+			var PIDController_P = document.getElementById("PIDController_P").value;
+			var PIDController_UpperSaturationLi = document.getElementById("PIDController_UpperSaturationLi").value;
+			
+			parent.send_ajax_request('%22Data%22.WriteParameter',1);
+			parent.send_ajax_request('%22Data%22.Parameter.PIDController_D',PIDController_D);
+			parent.send_ajax_request('%22Data%22.Parameter.PIDController_I',PIDController_I);
+			parent.send_ajax_request('%22Data%22.Parameter.PIDController_LowerSaturationLi',PIDController_LowerSaturationLi);
+			parent.send_ajax_request('%22Data%22.Parameter.PIDController_N',PIDController_N);
+			parent.send_ajax_request('%22Data%22.Parameter.PIDController_P',PIDController_P);
+			parent.send_ajax_request('%22Data%22.Parameter.PIDController_UpperSaturationLi',PIDController_UpperSaturationLi);
+			parent.send_ajax_request('%22Data%22.WriteParameter',0);
+		
+			alert("Variablen geschrieben");
+			parent.document.getElementById('ParameterSettings').contentWindow.location.reload(true);
+		}
+	</script>
+</body>
+</html>
