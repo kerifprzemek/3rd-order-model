@@ -24,10 +24,10 @@ end
 if uaClient.isConnected == 1 && init_Nodes == 0
     init_Nodes  = 1;
     % find DB "OpcInterface" of the server
-        DB_Node     = findNodeByName(uaClient.Namespace, 'OpcInterface', '-once');
+        DB_Node     = findNodeByName(uaClient.Namespace, 'MatlabData', '-once');
     % find variables "fanForce" and "currentAngle" in the DB "OpcInterface
-        Var_Node_In = findNodeByName(DB_Node, 'fanForce', '-once');
-        Var_Node_Out = findNodeByName(DB_Node, 'currentAngle', '-once');
+        Var_Node_In = findNodeByName(DB_Node, 'rSetLevelSquareTank', '-once');
+        Var_Node_Out = findNodeByName(DB_Node, 'lrActLevelSquareTank', '-once');
 
     %Var_Node_In = opcuanode(3,'"OpcInterface"."fanForce"',uaClient);
     %Var_Node_Out= opcuanode(3,'"OpcInterface"."currentAngle"',uaClient);
