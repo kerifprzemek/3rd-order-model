@@ -1,17 +1,0 @@
-þÿÿÿÃ###id###VisulizationRootBrowsableId###TargetIdNameText.0Text.1
-AlarmClass-###SearchableNonTechnicalFieldNamesOfDocument###ParentIds###ImmediateParentId###ReferenceFieldIdsAcknowledgementGroupTextInvalidAttempts	ValidDaysWarningDaysGenerationsMinNumPsswd
-ServerName
-PortNumberWindowsDomainStationNamePartnerNameNodeNameDisplayNameAcknowledgementModelIdEmailAddressAcknowledgedText
-ComingText	GoingTextCommonAlarmClass	CycleUnit	CycleTimeTextCommentNumber	ShortName
-LogoutTime###SearchFilterIdsTitleLanguageVersionConstant nameEvent class###UpdatableParentIdInterfaceMember_NameInterfaceMember_DatatypeInterfaceMember_ValueInterfaceMember_CommentSCL CodeNetwork titleLADFBD CodeAuthorFamilyUser-defined IDInstance DBNameInFunctionalViewNameInDBFullNameInDBDatatypeAddressValue	BackColor	GridColorBorderBackColorBorderColorButtonBackColorButtonBackFillStyleButtonBorderBackColorButtonBorderColorButtonEdgeStyleButtonFirstGradientColorButtonMiddleGradientColorButtonSecondGradientColor	EdgeStyleFlashing
-FocusColorFontGridlineAxisGridlineColorGridlineFillColorGridlineStyleHelpTextLayer
-RulerColor
-ScaleColorTableBackColorTableEvenRowBackColor	TableFontTableForeColorTableGridlineColorTableHeaderBackColorTableHeaderBackFillStyleTableHeaderBorderBackColorTableHeaderBorderColorTableHeaderEdgeStyleTableHeaderFirstGradientColorTableHeaderFontTableHeaderForeColorTableHeaderMiddleGradientColorTableHeaderSecondGradientColorTimeAxisModeTimeAxisSideBackFillStyleFirstGradientColor	ForeColorHorizontalAlignmentHorizontalPictureAlignmentMiddleGradientColorModePictureAutoSizingSecondGradientColorTextOffTextOnTextOrientationVerticalAlignmentVerticalPictureAlignment	FunctionsAboveUpperLimitColorBelowLowerLimitColor
-DataFormatFormatPatternUnitPropertyNameTagValueForPropertyTagPageAlarmLowerLimitColorAlarmUpperLimitColorBarBackColorBarColorBarOrientationBorderBrightColor3DBorderInnerStyle3DBorderOuterStyle3DBorderShadeColor3DCaption
-LabelColorPositionFontScalePositionThumbBackColor	TickStyleTextListUITypeEditorBitPositionUITypeEditorTagExpressionRangeFromToDataTypeTagAddressPanelInfoAddressAccessModeAcquisitionTriggerModeAcquisitionCycleConfirmationTypeCoding
-ConnectionPlcNameControllerTagLimitHighConstantLimitHighLowConstantLimitLowHighConstantLimitLowConstant	JobNumber
-StartValue
-LineColor1
-LineColor2OperatableAreaColor
-VisibilityGroupAlarmSourceButtonBarStyleColumnTextAckGroupColumnTextAlarmStateColumnTextAlarmTextColumnTextClassNameColumnTextDateColumnTextDeviceColumnTextDiagnosableColumnTextNumberColumnTextTime
-FilterTextSelectionBackColorSelectionForeColorSortByTimeDirectionViewType###ReconstitutionDataIDAssociatedCultureFieldIdAssociatedProjectVersion!AssociatedIndexDataVersionFieldId,AssociatedTechnicalFieldNamesHashCodeFieldId-AssociatedTechnicalFieldContentVersionFieldIdIndexAtomStoreText.2PreCodeHeaderCodeFooterUITypeEditorStartvalueUITypeEditorEndvalue
